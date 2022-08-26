@@ -1,0 +1,33 @@
+{
+  "name": "apm-http-handler",
+  "private": false,
+  "version": "0.0.1",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "author": "APM",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run clean && vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf ./dist"
+  },
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "core-js": "^3.22.5",
+    "esbuild": "^0.14.38",
+    "eslint": "^7.32.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^28.1.0",
+    "vite": "^3.0.7"
+  }
+}
