@@ -1,7 +1,8 @@
 import { httpHandler } from './utils/httpHandler';
-import { errorHandler } from './utils/ResponseUtil';
+import { errorHandler, responseParser } from './utils/ResponseUtil';
 
 export {
     httpHandler,
-    errorHandler
+    errorHandler,
+    responseParser
 };
