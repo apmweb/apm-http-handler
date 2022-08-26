@@ -5,6 +5,7 @@
   "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
   "author": "APM",
+  "repository": "https://github.com/apmweb/apm-http-handler",
   "license": "MIT",
   "type": "module",
   "scripts": {
